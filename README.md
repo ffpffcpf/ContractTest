@@ -124,7 +124,7 @@ Importantly, you should put your contracts in *src/test/resources/contracts*.
 
 ### 1.Because of some reason, you should remove all bean which name is datasource before using.(If there is not datasource bean, skip this step).
 
-### 2.Put init SQL scripts in *src/test/resources/database/h2*, so that the embedded H2 database create table and ready to be used.(After init database, you'd better remove the scripts ,or they will run every time before test).
+### 2.Put init SQL scripts in *src/test/resources/database/h2*, so that the embedded H2 database create table and ready to be used.
 
 ### 3.Create dataSet in the same package as the test class under *src/test/resources*
 Here is a dataset example:  
