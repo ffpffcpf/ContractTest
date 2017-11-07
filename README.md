@@ -4,8 +4,43 @@ use Moscow and spring-test-dbunit to make contract test easily
 ## Help you use this Step by Step!
 
 ### 1.Dependencies Information
+<pre><code>
+&lt;dependency&gt;
+    &lt;groupId&gt;com.github.macdao&lt;/groupId&gt;
+    &lt;artifactId&gt;moscow&lt;/artifactId&gt;
+    &lt;version&gt;0.3.0&lt;/version&gt;
+    &lt;scope&gt;test&lt;/scope&gt;
+&lt;/dependency&gt;
+&lt;dependency&gt;
+    &lt;groupId&gt;com.squareup.okhttp3&lt;/groupId&gt;
+    &lt;artifactId&gt;okhttp&lt;/artifactId&gt;
+    &lt;version&gt;3.1.2&lt;/version&gt;
+    &lt;scope&gt;test&lt;/scope&gt;
+&lt;/dependency&gt;
 
+&lt;dependency&gt;
+    &lt;groupId&gt;com.h2database&lt;/groupId&gt;
+    &lt;artifactId&gt;h2&lt;/artifactId&gt;
+    &lt;version&gt;1.4.196&lt;/version&gt;
+    &lt;scope&gt;test&lt;/scope&gt;
+&lt;/dependency&gt;
 
+&lt;dependency&gt;
+    &lt;groupId&gt;com.github.springtestdbunit&lt;/groupId&gt;
+    &lt;artifactId&gt;spring-test-dbunit&lt;/artifactId&gt;
+    &lt;version&gt;1.3.0&lt;/version&gt;
+    &lt;scope&gt;test&lt;/scope&gt;
+&lt;/dependency&gt;
+
+&lt;dependency&gt;
+    &lt;groupId&gt;org.dbunit&lt;/groupId&gt;
+    &lt;artifactId&gt;dbunit&lt;/artifactId&gt;
+    &lt;version&gt;2.5.2&lt;/version&gt;
+    &lt;scope&gt;test&lt;/scope&gt;
+&lt;/dependency&gt;
+</code></pre>
+
+Also,spring-framework is necessary.
 
 ### 2.Use Configuration Class to extend ContractTest
 <pre><code>public TestBaseBean extends ContractTest{  
